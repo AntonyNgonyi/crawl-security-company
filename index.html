@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    text-align: center;
+     background-image: url('/storage/emulated/0/crawl_security_company/images/_fhdnature2338.jpg');
+     background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: fixed;
+    font-size: 20px;
+}
+
+.landing-page {
+    /* Dark Navy */
+    color: #ffffff;
+    /* White text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+.logo-container {
+    position: fixed;
+    top: 39px;
+    /* Adjust as needed */
+    left: 4px;
+    /* Adjust as needed */
+    z-index: 1px;
+    /* Make sure logo is above other elements */
+    border-radius: 4px;
+}
+    .landing-content h1{
+        font-size: 30px;
+        color: white;
+        font-family: sans-serif;
+    }
+
+
+.logo-container img {
+    max-width: 75px;
+    position: fixed;
+    height: 77px;
+    width: 80px;
+    padding-top: 10px;
+    /* Adjust the size as needed */
+    border-radius: 5px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #0074D9;
+    /* Blue color for buttons */
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    fcont-size: 16px;
+    box-shadow: 0 1px 6px grey
+}
+
+.cta-button:hover {
+    background-color: green;
+    box-shadow: 0 1px 6px green/* Darker blue on hover */
+}
+
+.p .a {
+    text-decoration: none;
+}
+.top-menu {
+    background: transparent;
+    /* Dark Navy */
+     backdrop-filter: blur(1px);
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 2px solid grey;
+    box-shadow: 0 1px 6px gold;
+    backdrop-filter: blur (18px);
+}
+
+/*.thankyou {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    bottom: 70px;
+    color: white;
+    font-size: 15px;
+}
+*/
+
+.footer {
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    border-top: 2px solid #fefefe;
+    border-shadow: 1px 1px 6px gold;
+    padding-top: 6px;
+}
+
+.top-menu a {
+    float: left;
+    display: flex;
+    color: gold;
+    text-align: center;
+    justify-content: centr;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: #0074D9;
+    border-radius: 5px;
+    margin: 4px;
+    margin-inline-start: 5px;
+    box-sizing: border-box;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-size: 0.94rem;
+    box-shadow: 0 1px 6px grey
+    right: -10px;
+}
+
+.top-menu a:hover {
+    background-color: green;
+    /* Darker blue on hover */
+    color: white;
+    box-shadow: 0 1px 6px lime;
+}
+.content {
+    background-color: #f8f8f8;
+    /* Background color for the content section */
+    padding: 50px 0;
+    /* Add some padding for spacing */
+    text-align: center;
+    /* Center-align text */
+}
+
+.container {
+    max-width: 800px;
+    /* Set a maximum width for the container */
+    margin: 0 auto;
+    /* Center the container on the page */
+}
+
+.content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 6px lime;
+}
+
+.content p {
+    font-size: 1.125rem;
+    margin-bottom: 30px;
+}
+
+.content .cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    text-decoration: none;
+    background-color: #007bff;
+    /* Customize button color */
+    color: #ffffff;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    box-shadow: 0 1px 6px grey
+}
+
+.content .cta-button:hover {
+    background-color: green;
+    box-shadow: 0 1px 6px lime;
+    /* Customize hover color */
+}
+.popup {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.disabled-link {
+  pointer-events: none;
+}
+
+.disabled-link:hover + .popup {
+  display: block;
+}
+    </style>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'PrintScreen' || (e.key === 'p' && e.ctrlKey)) {
+                    alert('Screenshots are disabled on this page.');
+                    e.preventDefault();
+                }
+            });
+
+            window.addEventListener('contextmenu',
+                function(e) {
+                    alert('right click is disabled by crawl!  ');
+                    e.preventDefault();
+                });
+        });
+    </script>
+    <script>
+        document.addEventListener('click', function(event) {
+  var popup = document.getElementById('popup');
+  if (event.target != popup && event.target != document.querySelector('.disabled-link')) {
+    popup.style.display = 'none';
+  }
+});
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to CRAWL SECURITY COMPANY</title>
+   
+</head>
+<div class="top-menu">
+    <a href="Errorpage.html" style=" cursor: disabled;" onclick="alert('login or signup first!')">Home</a>
+    <a href="Errorpage.html" class="disabled" style="pointer-events:none; cursor: disabled;" onclick="alert('login or signup first!')">Services</a>
+    <a href="Errorpage.html" class="disabled" style="pointer-events: hover; cursor: disabled;" onclick="alert('login or signup first!')">About Us</a>
+    <a href="Errorpage.html" onclick="alert('login or signup first!')">Contact Us</a>
+    <a target="_blank" href="conduct.html">conduct</a>
+    <a target="_blank" href="login.html">login</a>
+</div>
+
+<body class="landing-page">
+    <div class="logo-container">
+        <img src="/storage/emulated/0/crawl_security_company/images/initiallogo.png" alt="CRAWL SECURITY COMPANY Logo">
+    </div>
+    <br><br>
+        <br><br><br><br><br>
+    <div class="landing-content">
+        <h1>Welcome to CRAWL SECURITY COMPANY</h1>
+        <p>
+            Enhancing your security, one step at a time.
+        </p>
+
+        <a href="/storage/emulated/0/crawl_security_company/html/signup.html" class="cta-button">Register</a><br><p style="color: #00000; font-weight:bold; font-size: 29px; border-bottom: 0px solid grey;">or</p>
+        <p style="font-size:20px;">
+            Explore <a href="/storage/emulated/0/crawl_security_company/html/call-to-action button.html" style="text-decoration:none; color: yellow; font-size:1em;"> Dashboard</a>
+        </p><br>
+    </div>
+    <!-- <div class="Thankyou">
+        Thank you for visiting <a href="https://crawlsecurity.com" style="text-decoration: none; color: gold;">Crawlers</a>!!
+    </div>
+    !-->
+    <footer class="footer">
+        Crawl Security
+        <a href="T&C.html" style="color: white; text-decoration:underline; font-family: Arial;">Terms & Conditions</a> Apply.<p>
+            <a href="privacy policy.html" style="text-decoration:underline; color: fefefe;">Privacy Policy</a><br><br>
+            2024 CRAWL PLC ™️
+        </p>
+    
+
+    <script>
+        function myFunction() {
+            document.getElementById("myLink").disabled = false; < script >
+            function myFunction() {
+                document.getElementById("myLink").disabled = false;
+            }
+            Id("myLink").disabled = true;
+            if (e.key === 'PrintScreen' || (e.key === 'p' && e.ctrlKey) {
+            alert('login for full access.');
+            e.preventDefault();
+        }
+        }
+    </script>
+    <script>
+        // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+        window.onscroll = function() {
+            scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                document.getElementById("navbar").style.padding = "30px 10px";
+                document.getElementById("logo").style.fontSize = "25px";
+            } else {
+                document.getElementById("navbar").style.padding = "80px 10px";
+                document.getElementById("logo").style.fontSize = "35px";
+            }
+        }
+    </script>
+</body>
+</html>
